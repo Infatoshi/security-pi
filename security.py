@@ -11,11 +11,8 @@ import os
 
 load_dotenv()
 
-
-
-# Replace 'your_token_here' with your Discord bot's token
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
-# Replace 'your_channel_id_here' with the channel ID you want to send messages to
+
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
 USER_ID = int(os.environ.get("USER_ID"))
@@ -26,7 +23,7 @@ delay = 3
 intents = discord.Intents.all()
 bot = discord.Client(intents=intents)
 
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt.xml')
+# face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt.xml')
 
 cap = cv2.VideoCapture(0)
 def is_motion_detected(video_source=0, threshold=1000, max_frames=5):
