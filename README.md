@@ -13,3 +13,4 @@ python -m venv venv
 source venv/bin/source
 pip install -r requirements.txt
 ```
+Add the bot token, channel ID, and your user ID to the .env file.
