@@ -16,9 +16,9 @@ load_dotenv()
 # Replace 'your_token_here' with your Discord bot's token
 DISCORD_TOKEN = os.environ.get("DISCORD_TOKEN")
 # Replace 'your_channel_id_here' with the channel ID you want to send messages to
-CHANNEL_ID = 1177882145482612737
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID"))
 
-USER_ID = 535232903521501184
+USER_ID = int(os.environ.get("USER_ID"))
 
 filter_time = 0
 delay = 3
